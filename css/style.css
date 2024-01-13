@@ -124,7 +124,7 @@ header nav {
 }
 
 .imagePicker {
-    margin-bottom: 500px;
+    margin-bottom: 50px;
 }
 
 .imagePicker ul {
@@ -155,22 +155,46 @@ header nav {
     margin-top: .6rem;
 }
 
-.green .color {
+#green .color {
     background-color: #394c38;
 }
-.silver .color {
+#silver .color {
     background-color: #c0c0c0;
 }
-.golden .color {
+#golden .color {
     background-color: #fae7bf;
 }
-.grafite .color {
+#grafite .color {
     background-color: #54524f;
 }
-.blue .color {
+#blue .color {
     background-color: #a7c1d9;
 }
 
 .selected {
     outline: 2px solid #43a1ff;
+}
+/* Mobile */
+@media (max-width:673px) {
+    .navBar li {
+        display: none;
+    }
+    .navBar .logo {
+        display: flex; 
+    }
+    .BottomHeader a {
+        display: none;
+    }
+    .BottomHeader .btn {
+        display: flex;
+    }
+
+    .mainContent {
+        padding: 2rem;
+         overflow: hidden; /* tudo que for maior nao contar */
+    }
+
+    .mainContent .subtitle {
+        font-size: 2.5rem;
+    }
 }
