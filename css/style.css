@@ -1,0 +1,176 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    list-style: none;
+    text-decoration: none;
+
+}
+
+/* nav bar */
+header nav {
+    background-color: #333;
+}
+
+.navBar {
+   display: flex;
+   justify-content: space-around; 
+   align-items: center;
+   font-size: .7rem;
+   padding: 0 1rem;
+   max-width: 1000px;
+   margin: 0 auto;
+}
+
+.navBar a {
+    color: #f5f5f6;
+    transition: .2s;
+}
+
+.navBar a:hover {
+    color: #fff;
+}
+
+.BottomHeader {
+    font-size: .8rem;
+    padding: 1rem;
+    border-bottom: 1px solid #ccc;
+}
+
+.BottomHeader h3 {
+    font-size: 1.2rem;
+}
+
+.BottomHeader a {
+    color: #333;
+    margin: 0 .5rem
+}
+
+.bottomHeaderInner {
+    max-width: 1000px;
+    margin: 0 auto ;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.bottomHeaderInner .btn,
+.btn {
+    background-color: #0071e3;
+    border-radius: 10rem;
+    padding: .4rem 1rem;
+    color: #fff;
+}
+
+/* Conteudo */
+
+.ribbon {
+    text-align: center;
+    padding: 1rem ;
+    background-color: #f5f5f6;
+    color: #1d1d1d;
+    font-size: .8rem;
+}
+.ribbon a {
+    color: #0071e3;
+}
+
+.mainContent {
+    text-align: center;
+    color: #1d1d1d;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.mainContent .title {
+    margin: 1rem;
+    font-size: 1.2rem;
+}
+
+.mainContent .subtitle {
+    margin: 1rem;
+    font-size: 3.5rem;
+    font-weight: bold;
+}
+
+.mainContent .description {
+    max-width: 600px;
+    margin: 1rem auto;
+    font-size: 1.1rem;
+    line-height: 1.5rem;
+}
+
+.mainContent .price {
+    font-size: 1.3rem;
+    color: #86868b;
+    margin: 2rem;
+}
+
+.mainContent .btn {
+    font-size: 1.1rem;
+    padding: .8rem 1.4rem;
+    align-self: center;
+}
+
+.mainContent  #imgIphone {
+    max-width: 1000px;
+    margin: 3rem auto;
+    opacity: 1;
+    transition: .5s;
+}
+.mainContent  #imgIphone.changing {
+    opacity: 0.5;
+}
+
+.imagePicker {
+    margin-bottom: 500px;
+}
+
+.imagePicker ul {
+    display: flex;
+    justify-content: center;
+}
+
+.imagePicker li {
+    margin: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+}
+
+.imagePicker li .color {
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    box-shadow: 1px 1px 3px;
+    border: 3px solid #fff;
+    pointer-events: none;
+}
+
+.imagePicker li .description {
+    font-size: .7rem;
+    color: #1d1d1d;
+    margin-top: .6rem;
+}
+
+.green .color {
+    background-color: #394c38;
+}
+.silver .color {
+    background-color: #c0c0c0;
+}
+.golden .color {
+    background-color: #fae7bf;
+}
+.grafite .color {
+    background-color: #54524f;
+}
+.blue .color {
+    background-color: #a7c1d9;
+}
+
+.selected {
+    outline: 2px solid #43a1ff;
+}
